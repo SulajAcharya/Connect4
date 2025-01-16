@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Connect 4</title>
+    <link rel="stylesheet" href="connect4.css">
+</head>
+
+<body>
+    <main>
+        <h1>Connect 4</h1>
+        <div class="game_cont">
+            <div class="board">
+                <ul class="column" id="c1">
+                    <p id="c1r6"></p>
+                    <p id="c1r5"></p>
+                    <p id="c1r4"></p>
+                    <p id="c1r3"></p>
+                    <p id="c1r2"></p>
+                    <p id="c1r1"></p>
+                </ul>
+                <ul class="column" id="c2">
+                    <p id="c2r6"></p>
+                    <p id="c2r5"></p>
+                    <p id="c2r4"></p>
+                    <p id="c2r3"></p>
+                    <p id="c2r2"></p>
+                    <p id="c2r1"></p>
+                </ul>
+                <ul class="column" id="c3">
+                    <p id="c3r6"></p>
+                    <p id="c3r5"></p>
+                    <p id="c3r4"></p>
+                    <p id="c3r3"></p>
+                    <p id="c3r2"></p>
+                    <p id="c3r1"></p>
+                </ul>
+                <ul class="column" id="c4">
+                    <p id="c4r6"></p>
+                    <p id="c4r5"></p>
+                    <p id="c4r4"></p>
+                    <p id="c4r3"></p>
+                    <p id="c4r2"></p>
+                    <p id="c4r1"></p>
+                </ul>
+                <ul class="column" id="c5">
+                    <p id="c5r6"></p>
+                    <p id="c5r5"></p>
+                    <p id="c5r4"></p>
+                    <p id="c5r3"></p>
+                    <p id="c5r2"></p>
+                    <p id="c5r1"></p>
+                </ul>
+                <ul class="column" id="c6">
+                    <p id="c6r6"></p>
+                    <p id="c6r5"></p>
+                    <p id="c6r4"></p>
+                    <p id="c6r3"></p>
+                    <p id="c6r2"></p>
+                    <p id="c6r1"></p>
+                </ul>
+                <ul class="column" id="c7">
+                    <p id="c7r6"></p>
+                    <p id="c7r5"></p>
+                    <p id="c7r4"></p>
+                    <p id="c7r3"></p>
+                    <p id="c7r2"></p>
+                    <p id="c7r1"></p>
+                </ul>
+            </div>
+            <div class="info_cont">
+                <div class="score_cont">
+                    <h2>Scoreboard</h2>
+                    <p id="whosturn">Red's Turn</p>
+                    <p id="redScore">Red's Score: 0</p>
+                    <p id="yellowScore">Yellow's Score: 0</p>
+                    
+                    <div style="display: flex; justify-content: space-around;">
+                        <button id="reset">Reset Board</button>
+                        <button id="restart">Restart Game</button>
+                    </div>
+                </div>
+                <div class="rules_cont">
+                    <h2>Rules</h2>
+                    <ul class="rules-list">
+                        <li>
+                            <span class="emoji">🎮</span>
+                            <span class="content">Each player gets discs of one color (🟥 or 🟨).</span>
+                        </li>
+                        <li>
+                            <span class="emoji">🎯</span>
+                            <span class="content">Be the first to connect 4 discs in a line - horizontally, vertically, or diagonally!</span>
+                        </li>
+                        <li>
+                            <span class="emoji">🔄</span>
+                            <span class="content">Take turns dropping one disc into any column of your choice.</span>
+                        </li>
+                        <li>
+                            <span class="emoji">⚡</span>
+                            <span class="content">Discs always stack at the lowest available space in the column.</span>
+                        </li>
+                        <li>
+                            <span class="emoji">🎉</span>
+                            <span class="content">The first player to connect 4 in a row wins the game!</span>
+                        </li>
+                        <li>
+                            <span class="emoji">🤝</span>
+                            <span class="content">If the grid fills completely and no one connects 4, the game ends in a tie.</span>
+                        </li>
+                        <li>
+                            <span class="emoji">🤓</span>
+                            <span class="content">Plan ahead and block your opponent while setting up your winning move!</span>
+                        </li>
+                    </ul>
+                    <p style="text-align: center; font-size: 20px;">Let the fun begin! 🚀</p>
+                </div>
+            </div>
+        </div>
+    </main>
+    <script src="connect4.js"></script>
+</body>
+
+</html>

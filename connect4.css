@@ -1,0 +1,162 @@
+* {
+    margin: 0;
+    padding: 0;
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+}
+body {
+    display: grid;
+    place-items: center;
+    background-color: black;
+    color: white;
+}
+
+main {
+    display: flex;
+    height: 100vh;
+    width: 100vw;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.game_cont {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    align-items: center;
+}
+
+.info_cont {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    width: fit-content;
+    align-items: center;
+}
+
+.score_cont {
+    width: 300px;
+}
+
+.rules_cont {
+    width: 350px;
+}
+
+.score_cont, .rules_cont {
+    /* width: 300px; */
+    background-color: rgb(98, 136, 238);
+    height: fit-content;
+    border-radius: 30px;
+    position: relative;
+    padding: 20px;
+    border: 2px solid white;
+}
+
+button {
+    padding: 5px 10px;
+    background-color: royalblue;
+    border-radius: 5px;
+}
+
+#whosturn {
+    font-size: 25px;
+    text-align: center;
+    color: black;
+}
+
+h2 {
+    text-align: center;
+    font-weight: 300;
+    font-size: 30px;
+}
+
+.board {
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    border: 2px solid white;
+    border-radius: 20px;
+    width: fit-content;
+    background-color: rgb(74, 74, 198);
+    height: fit-content;
+    overflow: hidden;
+}
+
+.column {
+    display: grid;
+    place-items: center;
+}
+
+.column p {
+    margin: 5px;
+    width: 75px;
+    height: 75px;
+    border: 2px solid black;
+    border-radius: 100px;
+    background-color: white;
+}
+
+.column:hover {
+    cursor: pointer;
+    background-color: rgb(98, 136, 238);
+}
+
+@media(max-width:700px) {
+    .board {
+        width: 500px;
+    }
+
+    .column p {
+        width: 55px;
+        height: 55px;
+    }
+}
+
+@media(max-width:520px) {
+    .board {
+        width: 400px;
+    }
+
+    .column p {
+        width: 40px;
+        height: 40px;
+    }
+}
+
+@media(max-width:420px) {
+    .board {
+        width: 320px;
+    }
+
+    .column p {
+        width: 30px;
+        height: 30px;
+    }
+}
+
+ul.rules-list {
+    list-style: none;
+    padding: 0;
+}
+
+ul.rules-list li {
+    display: flex;
+    align-items: flex-start;
+    margin-bottom: 8px;
+}
+
+ul.rules-list li .emoji {
+    margin-right: 10px;
+    font-size: 1.5rem;
+}
+
+ul.rules-list li .content {
+    font-size: 1rem;
+    line-height: 1;
+}
+
+
+#redScore , #yellowScore {
+    font-size: 18px;
+    text-align: center;
+}
